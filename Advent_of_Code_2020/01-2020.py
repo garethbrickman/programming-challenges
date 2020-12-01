@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 
 """
-Day 1: find the two/three entries in list that sum to the target sum and then
+Day 1: find the two/three elements in the data that sum to the target sum and then
 multiply those numbers together
-e.g. num_list = [1721, 979, 366, 299,  675, 1456]
+e.g. 
+
+num_list = [1721, 979, 366, 299,  675, 1456]
+target_sum = 2020
+
 1721 + 299 = 2020
 1721 * 299 = 514579
 """
