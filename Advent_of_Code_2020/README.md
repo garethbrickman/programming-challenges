@@ -11,7 +11,7 @@
 
 ## More about Advent of Code
 
-To learn more about the concept, see this link : https://adventofcode.com/2020/about
+To learn more about the concept, see the [About](https://adventofcode.com/2020/about)
 
 ### Credits
 
@@ -19,3 +19,6 @@ To learn more about the concept, see this link : https://adventofcode.com/2020/a
 
 [1]: https://twitter.com/ericwastl
 [2]: https://github.com/topaz
+
+[1.2]: http://i.imgur.com/wWzX9uB.png
+[2.2]: http://i.imgur.com/9I6NRUm.png
