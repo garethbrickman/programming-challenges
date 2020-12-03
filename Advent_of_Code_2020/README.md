@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | 1 | [Report Repair](https://adventofcode.com/2020/day/1)  | [Day_1](Day_1)
 | 2 | [Password Philosophy](https://adventofcode.com/2020/day/2) | [Day_2](Day_2)
+| 3 | [Toboggan Trajectory](https://adventofcode.com/2020/day/3) | [Day_3](Day_3)
 
 ## More about Advent of Code
 
