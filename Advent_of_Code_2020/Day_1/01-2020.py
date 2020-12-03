@@ -1,22 +1,13 @@
 #!/usr/bin/env python3
 
 """
-Day 1: find the two/three elements in the data that sum to the target sum and then
-multiply those numbers together
-e.g. 
-
-num_list = [1721, 979, 366, 299,  675, 1456]
-target_sum = 2020
-
-1721 + 299 = 2020
-1721 * 299 = 514579
+Solutions for Day 1
 """
 
 
 def sum_two():
     """
-    uses three numbers from the list
-    prints indices, values and product of ints that sum to the target sum
+    Solution for Part 1
     """
     input_data = '01-2020.txt'
     target_sum = 2020
@@ -40,8 +31,7 @@ def sum_two():
 
 def sum_three():
     """
-    uses three numbers from the list
-    prints indices, values and product of ints that sum to the target sum
+    Solution for Part 2
     """
     input_data = '01-2020.txt'
     target_sum = 2020
