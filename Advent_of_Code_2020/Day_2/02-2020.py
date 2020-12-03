@@ -1,27 +1,13 @@
 #!/usr/bin/env python3
 
 """
-Day 2: count how many passwords in a given list are valid
-based on given parameters
-
-e.g.
-1-3 a: abcde
-1-3 b: cdefg
-2-9 c: ccccccccc
-
-Each line gives the password policy and then the password.
-The password policy indicates the lowest and highest number of
-times a given letter must appear.
-For example, 1-3 a means that the password must contain a at
-least 1 time and at most 3 times.
-In the above example, 2 passwords are valid.
+Solutions for Day 2
 """
 
 
 def validate_passwords():
     """
-    uses three numbers from the list
-    prints indices, values and product of ints that sum to the target sum
+    Solution for Part 1
     """
     input_data = '02-2020.txt'
     valid = 0
@@ -40,6 +26,36 @@ def validate_passwords():
                 valid += 1
     print(valid)
 
+def validate_passwords2():
+    """
+    Solution for Part 2
+    """
+    input_data = '02-2020.txt'
+
+    with open(input_data) as _file:
+        lines = _file.readlines()
+    data = []
+    for line in lines:
+        _list = line.replace(":", "").strip().split(" ")
+        data.append(_list)
+    is_valid = 0
+    for item in data:
+        for idx, value in enumerate(item):
+            if idx == 0:
+                val = value.split("-")
+                fPos = int(val[0])
+                sPos = int(val[1])
+            if idx == 1:
+                char = value
+            if idx == 2:
+                pwd = value
+        if pwd[fPos - 1] == char or pwd[sPos - 1] == char:
+            is_valid += 1
+        if pwd[fPos - 1] == char and pwd[sPos - 1] == char:
+            is_valid -= 1
+    print(is_valid)
+
 
 if __name__ == "__main__":
     validate_passwords()
+    validate_passwords2()
