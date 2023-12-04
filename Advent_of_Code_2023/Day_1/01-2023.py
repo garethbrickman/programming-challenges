@@ -3,7 +3,7 @@
 from typing import List
 
 """
-Solutions for Day 1
+Solution for Day 1
 """
 
 def sum_of_calibration_values(input_data_string_list: List[str]) -> int:
@@ -26,7 +26,7 @@ def sum_of_calibration_values(input_data_string_list: List[str]) -> int:
         total += int(combined_digits)
     return total
 
-def part_1() -> None:
+def part_1() -> int:
     """
     Solution for Part 1
     """
@@ -37,9 +37,9 @@ def part_1() -> None:
         for line in lines:
             input_data_string_list.append(str(line).strip())
 
-    print(f"Part 1: {sum_of_calibration_values(input_data_string_list)}")
+    return(sum_of_calibration_values(input_data_string_list))
 
-def part_2() -> None:
+def part_2() -> int:
     """
     Solution for Part 2
     """
@@ -70,8 +70,8 @@ def part_2() -> None:
                 string = string.replace(word, f"{word}{numeric}{word}")
         amended_string_list.append(string)
 
-    print(f"Part 2: {sum_of_calibration_values(amended_string_list)}")
+    return sum_of_calibration_values(amended_string_list)
 
 if __name__ == "__main__":
-    part_1()
-    part_2()
+    print(part_1())
+    print(part_2())
