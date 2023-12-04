@@ -16,8 +16,8 @@ def sum_of_calibration_values(input_data_string_list: List[str]) -> int:
     """
     total = 0
     for string in input_data_string_list:
-        left_digit = ''
-        right_digit = ''
+        left_digit = ""
+        right_digit = ""
         for char in string:
             if char.isdigit():
                 left_digit = char
@@ -33,7 +33,7 @@ def part_1() -> int:
     """
     Solution for Part 1
     """
-    input_data = '01-2023.txt'
+    input_data = "01-2023.txt"
     input_data_string_list = []
 
     with open(input_data, encoding='utf-8') as lines:
@@ -47,7 +47,7 @@ def part_2() -> int:
     """
     Solution for Part 2
     """
-    input_data = '01-2023.txt'
+    input_data = "01-2023.txt"
     input_data_string_list = []
     amended_string_list = []
 
