@@ -9,3 +9,4 @@ To learn more about the concept, see the [About](https://adventofcode.com/2023/a
 | Days | Name | Code | 
 | --- | --- | --- |
 | 1 | [Trebuchet?!](https://adventofcode.com/2023/day/1)  | [Day_1](Day_1)
+| 2 | [Cube Conundrum](https://adventofcode.com/2023/day/2)  | [Day_2](Day_2)
