@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 
+"""
+Solutions for Day 1
+"""
+
+
 from typing import List
 
-"""
-Solution for Day 1
-"""
 
 def sum_of_calibration_values(input_data_string_list: List[str]) -> int:
     """
-    Parses each string in list from start to end and end to start 
-    Detects first digit in each direction and concatenates 
+    Parses each string in list from start to end and end to start
+    Detects first digit in each direction and concatenates
     Converts to int and increments total
     """
     total = 0
@@ -26,6 +28,7 @@ def sum_of_calibration_values(input_data_string_list: List[str]) -> int:
         total += int(combined_digits)
     return total
 
+
 def part_1() -> int:
     """
     Solution for Part 1
@@ -33,11 +36,12 @@ def part_1() -> int:
     input_data = '01-2023.txt'
     input_data_string_list = []
 
-    with open(input_data) as lines:
+    with open(input_data, encoding='utf-8') as lines:
         for line in lines:
             input_data_string_list.append(str(line).strip())
 
-    return(sum_of_calibration_values(input_data_string_list))
+    return sum_of_calibration_values(input_data_string_list)
+
 
 def part_2() -> int:
     """
@@ -60,7 +64,7 @@ def part_2() -> int:
         "nine": "9"
     }
 
-    with open(input_data) as lines:
+    with open(input_data, encoding='utf-8') as lines:
         for line in lines:
             input_data_string_list.append(str(line).strip())
 
@@ -71,6 +75,7 @@ def part_2() -> int:
         amended_string_list.append(string)
 
     return sum_of_calibration_values(amended_string_list)
+
 
 if __name__ == "__main__":
     print(part_1())
